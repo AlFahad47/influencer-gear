@@ -112,7 +112,7 @@ nav img {
     margin-top: 12px;
     gap: 10px;
   }
-  /* mobile banner section */
+  /* tab banner section */
   .banner {
     flex-direction: column-reverse;
     align-items: center;
@@ -137,6 +137,40 @@ nav img {
   }
   .banner-description {
     max-width: 321px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    margin-top: 12px;
+    gap: 20px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .banner-imgs {
+    margin: 0 auto;
+  }
+  .banner-text {
+    margin: 0 auto;
+  }
+  .banner-text {
+    align-items: center;
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+    line-height: normal;
+  }
+  .banner-description {
     font-size: 1.4rem;
     margin-bottom: 20px;
   }
