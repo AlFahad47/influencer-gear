@@ -37,13 +37,23 @@ img {
   display: flex;
 }
 
+.btn-primary {
+  background-color: #e02c6d;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 41px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
 /* Header */
 .header {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-header img {
+nav img {
   max-width: 24px;
 }
 
@@ -58,4 +68,30 @@ header img {
 .nav-logo {
   font-size: 2.4rem;
   font-weight: 700;
+}
+
+.banner {
+  justify-content: center;
+}
+.banner-text {
+  max-width: 582px;
+}
+
+.banner-title {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 7rem;
+
+  margin-bottom: 16px;
+}
+
+.banner-description {
+  margin-bottom: 16px;
+}
+.banner-imgs {
+  position: relative;
+}
+
+.banner-img {
+  position: absolute;
 }
