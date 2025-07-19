@@ -70,11 +70,15 @@ nav img {
   font-weight: 700;
 }
 
+/* banner section */
 .banner {
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .banner-text {
   max-width: 582px;
+  flex-direction: column;
+  margin-left: 120px;
 }
 
 .banner-title {
@@ -90,8 +94,50 @@ nav img {
 }
 .banner-imgs {
   position: relative;
+  margin-right: 132px;
 }
 
 .banner-img {
   position: absolute;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    margin-top: 12px;
+    gap: 10px;
+  }
+  /* mobile banner section */
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .banner-imgs {
+    max-width: 257px;
+    margin: 0 auto;
+  }
+  .banner-text {
+    margin: 0 auto;
+  }
+  .banner-text {
+    align-items: center;
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 2.8rem;
+    max-width: 404px;
+    margin-bottom: 16px;
+    line-height: normal;
+  }
+  .banner-description {
+    max-width: 321px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
 }
