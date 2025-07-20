@@ -36,6 +36,10 @@ img {
 .display-flex {
   display: flex;
 }
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .btn-primary {
   background-color: #e02c6d;
@@ -100,6 +104,74 @@ nav img {
 .banner-img {
   position: absolute;
 }
+/* e-commerce section */
+.e-commerce-links {
+  max-width: 1140px;
+  margin: 20px auto;
+  gap: 61px;
+  padding: 36px 62px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-image: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+  border-image-slice: 1;
+}
+
+/* popular collectio section */
+
+.popular-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.popular-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 7rem;
+}
+.card {
+  /* max-width: 299px; */
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 17px 15px;
+  border-radius: 5px;
+}
+.card > img {
+  max-width: 300px;
+  border-radius: 5px;
+}
+.stars {
+  display: flex;
+}
+.stars > img {
+  max-width: 10px;
+}
+
+.card-title {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 4rem;
+}
+.card-price {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.card-description {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1047px;
+  gap: 30px;
+}
 
 @media screen and (max-width: 576px) {
   .navbar,
@@ -140,6 +212,32 @@ nav img {
     font-size: 1.4rem;
     margin-bottom: 20px;
   }
+
+  /* e-commerce mobile section */
+  .e-commerce-links {
+    gap: 30px;
+    padding: 40px 50px;
+    flex-wrap: wrap;
+    border: none;
+  }
+  .e-commerce-links img {
+    max-width: 60%;
+  }
+
+  /* popular mobile section */
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card-price {
+    font-weight: 700;
+  }
+  .card-title {
+    font-weight: 700;
+  }
+  .card-description {
+    font-weight: 500;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -173,5 +271,23 @@ nav img {
   .banner-description {
     font-size: 1.4rem;
     margin-bottom: 20px;
+  }
+
+  /* e-commerce tab section */
+  .e-commerce-links {
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  /* popular mobile section */
+
+  .cards {
+    grid-template-columns: repeat(2, auto);
+  }
+  .th-9 {
+    grid-column: 1 / -1;
+    /* Span both columns */
+
+    justify-self: center;
   }
 }
