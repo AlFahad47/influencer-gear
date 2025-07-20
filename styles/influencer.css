@@ -50,7 +50,14 @@ main {
   font-size: 1.6rem;
   font-weight: 700;
 }
-
+.btn-secondary {
+  background-color: #e02c6d;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
 /* Header */
 .header {
   max-width: 1440px;
@@ -122,7 +129,7 @@ nav img {
   border-image-slice: 1;
 }
 
-/* popular collectio section */
+/* popular collection section */
 
 .popular-collection {
   display: flex;
@@ -138,7 +145,6 @@ nav img {
   line-height: 7rem;
 }
 .card {
-  /* max-width: 299px; */
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
   padding: 17px 15px;
   border-radius: 5px;
@@ -178,6 +184,35 @@ nav img {
   color: #e02c6d;
   font-size: 1.6rem;
   font-weight: 700;
+}
+
+/* featured section */
+
+.featured-product {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin: 100px auto;
+}
+
+.featured-img {
+  max-width: 404px;
+}
+.featured-text {
+  max-width: 610px;
+}
+
+.featured-title {
+  font-size: 3.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  margin-top: 23px;
+}
+.featured-description {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #6c6c6c;
 }
 
 @media screen and (max-width: 576px) {
@@ -245,6 +280,22 @@ nav img {
   .card-description {
     font-weight: 500;
   }
+
+  /* .popular-bottom-text {
+    margin-right: 20px;
+  } */
+  /* featured section */
+
+  .featured-product {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 10%;
+    text-align: center;
+    gap: 30px;
+  }
+  .featured-title {
+    font-size: 2.4rem;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -296,5 +347,14 @@ nav img {
     /* Span both columns */
 
     justify-self: center;
+  }
+
+  /* featured section */
+
+  .featured-product {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
   }
 }
