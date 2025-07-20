@@ -129,6 +129,8 @@ nav img {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  max-width: 1047px;
+  margin: 0 auto;
 }
 .popular-title {
   font-size: 2.8rem;
@@ -169,8 +171,13 @@ nav img {
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 1047px;
   gap: 30px;
+}
+.popular-bottom-text {
+  align-self: flex-end;
+  color: #e02c6d;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 576px) {
